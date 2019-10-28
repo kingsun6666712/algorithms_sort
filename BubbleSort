@@ -1,12 +1,22 @@
+package atonomic;
 public class BubbleSortedTest{
 
+	private static void sort(int arr[]) {
+		
+		for(int num:arr) {
+			System.out.println("排序数组为：");
+			System.out.println(num+" ");
+		}
+		
+	}
     public static void main (String args[]){
     
       int arr[] = {7,3,19,6,28,15,2,17};
-      System.out.println("排序前数组为：");
-      for(int num:arr){
-        System.out.println(num+" ");
-      }
+      
+      sort(arr);
+//      for(int num:arr){
+//        System.out.println(num+" ");
+//      }
       
       for(int i=0;i<arr.length-1;i++)
       {
@@ -17,10 +27,10 @@ public class BubbleSortedTest{
           arr[j+1] = temp;
           }
         }
-        System.out.println("排序后的数组为：");
-        for(int num:arr){
-          System.out.println(num+" ");
-        }
+//        System.out.println("排序后的数组为：");
+//        for(int num:arr){
+//          System.out.println(num+" ");
+//        }
       }
     }
 }
