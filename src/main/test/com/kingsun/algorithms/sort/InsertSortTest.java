@@ -1,7 +1,7 @@
-package com.zqx.algorithms_sort.Main;
+package com.kingsun.algorithms.sort;
 
-import com.zqx.algorithms_sort.Utils.PrintUtil;
-import com.zqx.algorithms_sort.delegation.InsertSort;
+import com.kingsun.utils.PrintUtil;
+import main.java.algorithms.sort.InsertSort;
 
 public class InsertSortTest {
 

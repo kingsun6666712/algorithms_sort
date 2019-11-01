@@ -1,10 +1,10 @@
-package com.zqx.algorithms_sort.Utils;
+package com.kingsun.utils;
 
 public class PrintUtil {
 	
 	public void print(int arr[]) {
 		
-		System.out.println("ÅÅÐòÊý×éÎª£º");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½");
 		for(int num:arr) {
 			System.out.println(num+" ");
 		}

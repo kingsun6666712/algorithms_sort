@@ -1,4 +1,4 @@
-package com.zqx.algorithms_sort.delegation;
+package main.java.algorithms.sort;
 
 public class InsertSort {
 
