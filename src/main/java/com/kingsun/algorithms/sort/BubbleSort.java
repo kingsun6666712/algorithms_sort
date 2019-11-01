@@ -1,4 +1,4 @@
-package main.java.algorithms.sort;
+package com.kingsun.algorithms.sort;
 
 public class BubbleSort {
 

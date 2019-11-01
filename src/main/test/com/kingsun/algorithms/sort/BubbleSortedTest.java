@@ -1,7 +1,6 @@
 package com.kingsun.algorithms.sort;
 
 import com.kingsun.utils.PrintUtil;
-import main.java.algorithms.sort.BubbleSort;
 
 public class BubbleSortedTest {
 
