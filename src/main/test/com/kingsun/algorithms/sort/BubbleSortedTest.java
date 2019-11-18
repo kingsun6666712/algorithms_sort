@@ -1,17 +1,20 @@
 package com.kingsun.algorithms.sort;
 
-import com.kingsun.utils.PrintUtil;
-
+import org.junit.Test;
 public class BubbleSortedTest {
 
-    public static void main (String args[]){
+    @Test
+    public void test (){
     	
       BubbleSort sort = new BubbleSort();
       
-      PrintUtil print = new PrintUtil();
+      //PrintUtil print = new PrintUtil();
     
-      int arr[] = {7,3,19,6,28,15,2,17};
-      
-      print.print(sort.sort(arr));
+      int numbers[] = {7,3,19,6,28,15,2,17};
+
+      int[] results =sort.sort(numbers);
+
+      org.junit.Assert.assertEquals(results[0],2);
+
     }
 }
