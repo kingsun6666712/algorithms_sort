@@ -1,6 +1,7 @@
 package com.kingsun.algorithms.sort;
 
 import org.junit.Test;
+import com.kingsun.algorithms.sort.BubbleSort;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -8,18 +9,28 @@ import static org.junit.Assert.assertTrue;
 public class BubbleSortTest {
 
     @Test
-    public void test() {
+    public void should_sort_large_array() {
+        for (int i = 0; i < 10; i++) {
+            int count = (i + 1) * 5000;
+            int[] numbers = aRandomArray(count);
 
-        BubbleSort sort = new BubbleSort();
+            long start = System.currentTimeMillis();
+            int[] results = new BubbleSort().sort(numbers);
+            long end = System.currentTimeMillis();
+            System.out.println(count +"耗时：" + (end - start));
 
-        int numbers[] = {7, 3, 19, 6, 28, 15, 2, 17};
+            for (int j = 0; j < results.length - 1; j++) {
+                assertTrue(results[j] <= results[j + 1]);
+            }
 
-        int[] results = sort.sort(numbers);
-
-        for (int i = 0; i < results.length - 1; i++) {
-            assertTrue(results[i] < results[i + 1]);
         }
+    }
 
-
+    public int[] aRandomArray(int count) {
+        int[] numbers = new int[count];
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = (int) (count * (Math.random()));
+        }
+        return numbers;
     }
 }
